@@ -1,4 +1,4 @@
-# Welcome to Film Search App! 🎬
+# Welcome to Countries Search App! 🎬
 
 Build a React Router app with Bun and TailwindCSS. This app is a simple film search app that allows users to search for films and view details about each film.
 
