@@ -1,18 +1,20 @@
-# Welcome to React Router!
+# Welcome to Film Search App! 🎬
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Build a React Router app with Bun and TailwindCSS. This app is a simple film search app that allows users to search for films and view details about each film.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+---
+
+Use this `npx create-react-router@latest [name-app]` to create a new React Router app.
 
 ## Features
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+-   🚀 Server-side rendering
+-   ⚡️ Hot Module Replacement (HMR)
+-   📦 Asset bundling and optimization
+-   🔄 Data loading and mutations
+-   🔒 TypeScript by default
+-   🎉 TailwindCSS for styling
+-   📖 [React Router docs](https://reactrouter.com/)
 
 ## Getting Started
 
@@ -21,7 +23,7 @@ A modern, production-ready template for building full-stack React applications u
 Install the dependencies:
 
 ```bash
-npm install
+bun install
 ```
 
 ### Development
@@ -29,7 +31,7 @@ npm install
 Start the development server with HMR:
 
 ```bash
-npm run dev
+bun dev
 ```
 
 Your application will be available at `http://localhost:5173`.
@@ -39,7 +41,7 @@ Your application will be available at `http://localhost:5173`.
 Create a production build:
 
 ```bash
-npm run build
+bun build
 ```
 
 ## Deployment
@@ -57,18 +59,18 @@ docker run -p 3000:3000 my-app
 
 The containerized application can be deployed to any platform that supports Docker, including:
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+-   AWS ECS
+-   Google Cloud Run
+-   Azure Container Apps
+-   Digital Ocean App Platform
+-   Fly.io
+-   Railway
 
 ### DIY Deployment
 
 If you're familiar with deploying Node applications, the built-in app server is production-ready.
 
-Make sure to deploy the output of `npm run build`
+Make sure to deploy the output of `bun build`
 
 ```
 ├── package.json
@@ -81,7 +83,3 @@ Make sure to deploy the output of `npm run build`
 ## Styling
 
 This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
