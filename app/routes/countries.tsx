@@ -6,8 +6,10 @@ export function meta({}: Route.MetaArgs) {
     return [{ title: "List Countries" }, { name: "Check out countries list!", content: "List of countries" }]
 }
 
+const API_URL = import.meta.env.VITE_API_URL
+
 export async function clientLoader() {
-    const response = await fetch("https://restcountries.com/v3.1/all")
+    const response = await fetch(API_URL)
     const data = await response.json()
     return data
 }
