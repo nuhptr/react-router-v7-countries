@@ -2,6 +2,10 @@ import { Link } from "react-router"
 import { useState } from "react"
 import type { Route } from "./+types/countries"
 
+export function meta({}: Route.MetaArgs) {
+    return [{ title: "List Countries" }, { name: "Check out countries list!", content: "List of countries" }]
+}
+
 export async function clientLoader() {
     const response = await fetch("https://restcountries.com/v3.1/all")
     const data = await response.json()

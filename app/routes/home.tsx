@@ -3,7 +3,7 @@ import type { Route } from "./+types/home"
 
 export function meta({}: Route.MetaArgs) {
     return [
-        { title: "Findmovie" },
+        { title: "Find Countries" },
         { name: "Check out country data!", content: "Find the movie you're looking for! using react router v7" },
     ]
 }

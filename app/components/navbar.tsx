@@ -7,7 +7,7 @@ export function Navbar() {
                 <div className="flex flex-col md:flex-row items-center">
                     <NavLink to="/" className="flex items-center mb-5 md:mb-0">
                         <span className="text-xl font-semibold tracking-tight text-gray-900 select-none">
-                            REST <span className="text-indigo-600">Explorer</span>
+                            WIKI <span className="text-indigo-600">Country</span>
                         </span>
                     </NavLink>
 
