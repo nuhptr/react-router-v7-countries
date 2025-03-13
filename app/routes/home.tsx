@@ -12,22 +12,25 @@ export default function Home() {
     return (
         <div className="px-2 py-32 bg-white md:px-0 min-h-screen flex items-center">
             <div className="container items-center max-w-6xl mx-auto xl:px-5">
-                <div className="flex flex-wrap items-center sm:-mx-3">
+                <div className="flex flex-col sm:flex-row items-center sm:-mx-3 gap-4">
                     <div className="w-full md:w-1/2 md:px-3">
                         <div className="space-y-5 sm:max-w-md lg:max-w-lg">
-                            <h1 className="text-4xl font-semibold leading-tight tracking-[-0.005em] text-gray-900 sm:text-5xl">
-                                <span className="block xl:inline">
-                                    Explorer Countries With{" "}
-                                    <span className="block text-indigo-600 xl:inline">Real Time Data</span>
-                                </span>
-                            </h1>
-                            <p className="text-base text-gray-500 sm:max-w-md lg:text-xl leading-snug">
-                                Discover details about every country around the world - from capitals to regions!
-                            </p>
-                            <div className="flex flex-col sm:flex-row sm:space-x-4">
+                            <div>
+                                <h1 className="text-4xl font-semibold leading-tight tracking-[-0.005em] text-gray-900 sm:text-5xl">
+                                    <span className="block xl:inline">
+                                        Explorer Countries With{" "}
+                                        <span className="block text-indigo-600 xl:inline">Real Time Data</span>
+                                    </span>
+                                </h1>
+                                <p className="text-base text-gray-500 sm:max-w-md lg:text-xl leading-snug">
+                                    Discover details about every country around the world - from capitals to regions!
+                                </p>
+                            </div>
+
+                            <div className="flex flex-col sm:flex-row gap-y-4 sm:space-x-4">
                                 <Link
                                     to="/countries"
-                                    className="flex items-center justify-center px-6 py-3 text-lg text-white bg-indigo-700"
+                                    className="flex items-center justify-center px-6 py-3 rounded-md text-lg text-white bg-indigo-700"
                                 >
                                     Explore Now
                                     <svg
@@ -46,7 +49,7 @@ export default function Home() {
                                 </Link>
                                 <Link
                                     to="/about"
-                                    className="flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600"
+                                    className="flex items-center justify-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md hover:bg-gray-200 hover:text-gray-600"
                                 >
                                     Learn More
                                 </Link>

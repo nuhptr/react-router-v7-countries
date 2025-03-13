@@ -40,36 +40,38 @@ export default function Countries({ loaderData }: Route.ComponentProps) {
     })
 
     return (
-        <div className="px-[72px] py-6">
-            <h2 className="text-2xl font-semibold mb-6 text-gray-900">Countries</h2>
-            <div className="flex flex-col max-w-4xl sm:flex-row gap-4 py-6">
-                <input
-                    type="text"
-                    placeholder="Search by name..."
-                    value={search}
-                    onChange={(event) => changeHandler(event.target.value)}
-                    className="border border-gray-300 rounded px-3 py-2 w-full sm:w-1/2 focus:outline-none focus:ring focus:border-indigo-500"
-                />
-                <select
-                    name="region"
-                    id="region"
-                    value={region}
-                    onChange={(event) => setRegion(event.target.value)}
-                    className="border border-gray-300 rounded px-3 py-2 w-full sm:w-1/2 focus:outline-none focus:ring focus:border-indigo-500"
-                >
-                    <option value="">All Region</option>
-                    <option value="africa">Africa</option>
-                    <option value="americas">Americas</option>
-                    <option value="asia">Asia</option>
-                    <option value="europe">Europe</option>
-                    <option value="oceania">Oceania</option>
-                </select>
+        <div className="px-4 sm:px-[72px] max-sm:pt-24 pt-[69px] pb-16">
+            <div className="fixed bg-white w-full">
+                <h2 className="text-2xl font-semibold max-sm:mb-1 max-sm:mt-8 mt-1 text-gray-900">Countries</h2>
+                <div className="flex flex-col max-w-[390px] sm:max-w-4xl sm:flex-row gap-4 py-4">
+                    <input
+                        type="text"
+                        placeholder="Search by name..."
+                        value={search}
+                        onChange={(event) => changeHandler(event.target.value)}
+                        className="border border-gray-300 rounded px-3 py-2 w-full sm:w-1/2 focus:outline-none focus:ring focus:border-indigo-500"
+                    />
+                    <select
+                        name="region"
+                        id="region"
+                        value={region}
+                        onChange={(event) => setRegion(event.target.value)}
+                        className="border border-gray-300 rounded px-3 py-2 w-full sm:w-1/2 focus:outline-none focus:ring focus:border-indigo-500"
+                    >
+                        <option value="">All Region</option>
+                        <option value="africa">Africa</option>
+                        <option value="americas">Americas</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                        <option value="oceania">Oceania</option>
+                    </select>
+                </div>
             </div>
 
             {filteredCountries.length === 0 ? (
-                <div> No countries match your filters. </div>
+                <div className="max-sm:pt-24"> No countries match your filters. </div>
             ) : (
-                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-sm:pt-52">
                     {filteredCountries.map((country: CountriesType) => (
                         <li
                             key={country.cca3}
