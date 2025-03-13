@@ -30,7 +30,7 @@ export default function Country({ loaderData }: Route.ComponentProps) {
 
     return (
         <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 max-sm:pt-24">
                 <h2 className="text-3xl font-bold text-gray-900">{country.name}</h2>
                 <div className="space-y-2 text-gray-700">
                     <p>
@@ -51,8 +51,8 @@ export default function Country({ loaderData }: Route.ComponentProps) {
                 </div>
             </div>
             {country.flagUrl && (
-                <div className="flex justify-center items-center">
-                    <img src={country.flagUrl} className="w-56 h-auto border rounded shadow-lg" />
+                <div className="flex items-center max-sm:w-svw">
+                    <img src={country.flagUrl} className="w-56 max-sm:w-[360px] h-auto border rounded shadow-lg" />
                 </div>
             )}
         </div>

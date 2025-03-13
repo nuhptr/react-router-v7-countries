@@ -43,7 +43,7 @@ export default function Countries({ loaderData }: Route.ComponentProps) {
         <div className="px-4 sm:px-[72px] max-sm:pt-24 pt-[69px] pb-16">
             <div className="fixed bg-white w-full">
                 <h2 className="text-2xl font-semibold max-sm:mb-1 max-sm:mt-8 mt-1 text-gray-900">Countries</h2>
-                <div className="flex flex-col max-w-[390px] sm:max-w-4xl sm:flex-row gap-4 py-4">
+                <div className="flex flex-col max-w-[340px] sm:max-w-4xl sm:flex-row gap-4 py-4">
                     <input
                         type="text"
                         placeholder="Search by name..."
